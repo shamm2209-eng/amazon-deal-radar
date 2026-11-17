@@ -1,0 +1,74 @@
+2026-11-17 15:49:28,272 INFO radar.http: robots.txt loaded (6711 bytes)
+2026-11-17 15:49:33,051 INFO radar.http: Playwright browser started
+2026-11-17 15:49:38,911 INFO radar.amazon: parsed 24 used-offer candidates from search page
+2026-11-17 15:49:39,019 INFO radar.pipeline: new used offer: B0GSRVVNNB | 153.15 | MDS85AY-5C Educational Globe 8.5cm with Battery Light – Engl
+2026-11-17 15:49:39,131 INFO radar.pipeline: new used offer: B091D3D723 | 18.34 | Reusable Metal Drinking Straws 304 Stainless Steel Sturdy Be
+2026-11-17 15:49:39,242 INFO radar.pipeline: new used offer: B0DT7JPKQT | 46.8 | Reusable Glass Straws Set - Upgrade your drinking experience
+2026-11-17 15:49:39,344 INFO radar.pipeline: new used offer: B0FJG26QGQ | 1533.54 | SOKANY SK-13043 2 * 1 2000
+2026-11-17 15:49:39,439 INFO radar.pipeline: new used offer: B0C4JJHM5R | 39.66 | 1.5M VGA Cable Black
+2026-11-17 15:49:39,536 INFO radar.pipeline: new used offer: B0CL7PSN9J | 187.98 | 4 Pcs Stainless Steel Soft Self Closing Hydraulic Hinges wit
+2026-11-17 15:49:39,628 INFO radar.pipeline: new used offer: B09FHRNSL2 | 17.0 | Foam White Plate 500 G 12 Pcs
+2026-11-17 15:49:39,720 INFO radar.pipeline: new used offer: B09C3CMNNP | 97.58 | Oneshow 2-Tier Countertop Fruit Basket Fruit Bowl Bread Bask
+2026-11-17 15:49:39,801 INFO radar.pipeline: new used offer: B0CD86W7TX | 295.8 | Anker 322 USB-C to USB-C Cable, USB-C to USB-C Fast Charging
+2026-11-17 15:49:39,893 INFO radar.pipeline: new used offer: B0D4KCBS7Z | 136.2 | Elmaayergy Scale Paper Set A3 Suitable For classroom, Homesc
+2026-11-17 15:49:39,975 INFO radar.pipeline: new used offer: B0DRDD72JN | 107.15 | Happy Home Silicone Collapsible Cup for Travel, 350ml Foldab
+2026-11-17 15:49:40,066 INFO radar.pipeline: new used offer: B0B53PMJ9Z | 33.19 | Alasyn plastic toilet cleaning brush, multicolor
+2026-11-17 15:49:40,157 INFO radar.pipeline: new used offer: B0DGL6T562 | 71.14 | El Helal and Silver Star Pro Swivel-Sweeper with 4 Roll, Red
+2026-11-17 15:49:40,238 INFO radar.pipeline: new used offer: B086VCKKHH | 605.48 | UGREEN USB-C to USB-C 3.1 Gen2 100W PD Cable Black
+2026-11-17 15:49:40,340 INFO radar.pipeline: new used offer: B0C1F3NWJD | 27.94 | Transparent Plastic Spoons - 50 PCS
+2026-11-17 15:49:40,436 INFO radar.pipeline: new used offer: B0026M9VBY | 63.75 | Pilot BOARD MARKER CHISEL GREEN WITH CARTRIDGE WBMA-VBM-MC-G
+2026-11-17 15:49:40,523 INFO radar.pipeline: new used offer: B0DBB1XGZT | 31.58 | Bubbles Glass Tumbler with Lid and Spoon Cute Bear Shape 300
+2026-11-17 15:49:40,615 INFO radar.pipeline: new used offer: B091JHX3VZ | 94.46 | Mini Digital Voltmeter DC 100V 10A with 0.28 inch Blue + Red
+2026-11-17 15:49:40,696 INFO radar.pipeline: new used offer: B09C13SB5T | 276.25 | UGREEN USB-C To USB-C Cable 60W Braided 2M Black
+2026-11-17 15:49:40,779 INFO radar.pipeline: new used offer: B09233TZZW | 206.1 | Leto Erasable Ink Pen - 12 Pieces, Blue
+2026-11-17 15:49:40,884 INFO radar.pipeline: new used offer: B0FW5CG552 | 232.75 | Portal Amenhotep Striped Drinking Glass Set – 6 Pieces Elega
+2026-11-17 15:49:40,991 INFO radar.pipeline: new used offer: B0GHLFJVHL | 65.81 | Set Of 10 Self Adhesive Hook And Loop Pads Round Fastener Do
+2026-11-17 15:49:41,106 INFO radar.pipeline: new used offer: B091J95N68 | 238.95 | iLOCK Extension cord ilock - 16 amp - 250v - 5 m
+2026-11-17 15:49:41,194 INFO radar.pipeline: new used offer: B0CJYLSZKQ | 20.66 | Elmaayergy TY-83/UCT-188 Adhesive Tape With Tape Dispenser W
+2026-11-17 15:49:41,194 INFO radar.pipeline: discovery complete: 24 unique candidates
+2026-11-17 15:50:00,122 INFO radar.telegram: DRY RUN - would send sendPhoto to Telegram
+2026-11-17 15:50:00,123 INFO radar.telegram: sendPhoto failed - falling back to text message
+2026-11-17 15:50:00,123 INFO radar.telegram: DRY RUN - would send sendMessage to Telegram
+2026-11-17 15:50:00,267 INFO radar.pipeline: alert sent: B0C1F3NWJD tier=alert savings=51.230581253272824
+2026-11-17 15:50:00,365 INFO radar.http: Playwright browser stopped
+2026-11-17 15:50:00,461 INFO radar.pipeline: run finished: {'duration_s': 33.3, 'categories_fetched': 1, 'categories_blocked': 0, 'candidates': 24, 'product_pages_fetched': 4, 'product_pages_blocked': 0, 'compared': 4, 'alerts_sent': 1, 'suppressed_duplicates': 0, 'errors': 0}
+2026-11-17 15:50:00,461 INFO radar: Summary: {'duration_s': 33.3, 'categories_fetched': 1, 'categories_blocked': 0, 'candidates': 24, 'product_pages_fetched': 4, 'product_pages_blocked': 0, 'compared': 4, 'alerts_sent': 1, 'suppressed_duplicates': 0, 'errors': 0}
+2026-11-17 15:50:15,808 INFO radar.http: robots.txt loaded (6711 bytes)
+2026-11-17 15:50:16,704 INFO radar.http: Playwright browser started
+2026-11-17 15:50:19,957 INFO radar.amazon: parsed 24 used-offer candidates from search page
+2026-11-17 15:50:20,075 INFO radar.pipeline: new used offer: B0DJXVYPQ3 | 58.47 | Spray Bottle For Hair,Continuous Water Mister for Hairstylin
+2026-11-17 15:50:20,162 INFO radar.pipeline: new used offer: B0B3T77623 | 98.6 | Large A4 Size Document Zip Bag/Pouch Waterproof Zipper Pouch
+2026-11-17 15:50:20,268 INFO radar.pipeline: new used offer: B01KLUW0ZG | 330.6 | Flexzion Makeup Organizer - Cosmetic Jewelry Box Storage Hol
+2026-11-17 15:50:20,364 INFO radar.pipeline: new used offer: B0FL77RWFN | 109.11 | 200ml Clear Plastic Bottles – 3 Pack – Flip Top Cap – Refill
+2026-11-17 15:50:20,450 INFO radar.pipeline: new used offer: B08S41996T | 219.62 | CLICLED Cosmetic makeup organizer rack with 3 drawers and mi
+2026-11-17 15:50:20,557 INFO radar.pipeline: new used offer: B0922LD5MG | 89.04 | Clear Acrylic Fish Shape Lipstick Organizer Tower, Lip Gloss
+2026-11-17 15:50:20,680 INFO radar.pipeline: new used offer: B0D817ZFQM | 47.51 | Make Up Storage, Storage and Drawer Organizer, Multi-layer D
+2026-11-17 15:50:20,765 INFO radar.pipeline: new used offer: B0G2LFJFF5 | 293.25 | Lulupack 1.7oz Airless Pump Bottle - Mini Travel Foundation 
+2026-11-17 15:50:20,893 INFO radar.pipeline: new used offer: B097DQX3H3 | 77.35 | NA 2 in 1 Clear Acrylic Cotton Swab and Pads Holder With Lid
+2026-11-17 15:50:20,989 INFO radar.pipeline: new used offer: B0CGRGXWCC | 61.71 | Plastic Makeup Desk Drawer Organizer - L (18cm) - W (20cm) -
+2026-11-17 15:50:21,095 INFO radar.pipeline: new used offer: B0CGRZ3TNQ | 60.18 | Plastic Makeup Desk Drawer Organizer - Pink
+2026-11-17 15:50:21,190 INFO radar.pipeline: new used offer: B09NFXR8RX | 77.69 | ELLVELLON 2 Epilator With 20 Threads Threading Tweezer Kit U
+2026-11-17 15:50:21,280 INFO radar.pipeline: new used offer: B09Q8WQ76S | 96.97 | Hair Towel - Absorbent Microfiber 500 GSM Bath Towel, Hair-D
+2026-11-17 15:50:21,375 INFO radar.pipeline: new used offer: B01N0EHTTX | 16.15 | Feather Flamingo S - Women Face and body Razor – 3 pcs, Gent
+2026-11-17 15:50:21,504 INFO radar.pipeline: new used offer: B0B219VBBK | 32.98 | Makeup organizer
+2026-11-17 15:50:21,602 INFO radar.pipeline: new used offer: B00K3FFIOA | 2301.44 | Philips SatinShave Essential Women’s Electric Shaver for Leg
+2026-11-17 15:50:21,696 INFO radar.pipeline: new used offer: B0G25X1XT5 | 227.17 | 2 * 1 water bottle-this is a 600ml portable water bottle for
+2026-11-17 15:50:21,782 INFO radar.pipeline: new used offer: B0FND9LKYV | 55.25 | 2 Pieces 30ml Plastic Empty Refillable Travel Containers wit
+2026-11-17 15:50:21,869 INFO radar.pipeline: new used offer: B0GM7R3PN8 | 55.91 | EZABILLA Hair Scalp Massager Shampoo Brush with Soft Silicon
+2026-11-17 15:50:21,993 INFO radar.pipeline: new used offer: B0GHJMBH2K | 186.12 | 360 Rotating Acrylic Makeup Organizer,2 Tier Large Capacity 
+2026-11-17 15:50:22,165 INFO radar.pipeline: new used offer: B0CJCM7KKL | 43.71 | PRIME SHOP Shower Brush with Liquid Reservoir and Long Handl
+2026-11-17 15:50:22,331 INFO radar.pipeline: new used offer: B0DQPT2B2H | 51.84 | POHOVE Small Spray Bottle, 4 x 20 ml Transparent Atomiser Bo
+2026-11-17 15:50:22,510 INFO radar.pipeline: new used offer: B0DHBMNVBW | 455.38 | HOPEMOB Small Amber Glass Spray Bottles for Essential Oils, 
+2026-11-17 15:50:22,638 INFO radar.pipeline: new used offer: B0FGDTHJYR | 329.66 | U WILSON HEADBAND BRIGHT WHITE OS
+2026-11-17 15:50:22,639 INFO radar.pipeline: discovery complete: 24 unique candidates
+2026-11-17 15:50:42,244 INFO radar.telegram: DRY RUN - would send sendPhoto to Telegram
+2026-11-17 15:50:42,245 INFO radar.telegram: sendPhoto failed - falling back to text message
+2026-11-17 15:50:42,245 INFO radar.telegram: DRY RUN - would send sendMessage to Telegram
+2026-11-17 15:50:42,345 INFO radar.pipeline: alert sent: B01N0EHTTX tier=exceptional savings=95.85897435897436
+2026-11-17 15:50:42,346 INFO radar.telegram: DRY RUN - would send sendPhoto to Telegram
+2026-11-17 15:50:42,346 INFO radar.telegram: sendPhoto failed - falling back to text message
+2026-11-17 15:50:42,346 INFO radar.telegram: DRY RUN - would send sendMessage to Telegram
+2026-11-17 15:50:42,447 INFO radar.pipeline: alert sent: B0B219VBBK tier=alert savings=52.90627107215104
+2026-11-17 15:50:42,554 INFO radar.http: Playwright browser stopped
+2026-11-17 15:50:42,660 INFO radar.pipeline: run finished: {'duration_s': 27.8, 'categories_fetched': 1, 'categories_blocked': 0, 'candidates': 24, 'product_pages_fetched': 4, 'product_pages_blocked': 0, 'compared': 4, 'alerts_sent': 2, 'suppressed_duplicates': 0, 'errors': 0}
+2026-11-17 15:50:42,660 INFO radar: Summary: {'duration_s': 27.8, 'categories_fetched': 1, 'categories_blocked': 0, 'candidates': 24, 'product_pages_fetched': 4, 'product_pages_blocked': 0, 'compared': 4, 'alerts_sent': 2, 'suppressed_duplicates': 0, 'errors': 0}
