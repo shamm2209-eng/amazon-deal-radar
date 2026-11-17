@@ -221,8 +221,21 @@ class Pipeline:
                      deal.asin, deal.tier, deal.savings_pct)
 
     # ------------------------------------------------------------------
+    def _send_health_once(self, text: str, key: str = "__health__",
+                          cooldown_hours: float = 6.0) -> None:
+        """Send a health warning, but at most once per cooldown window so a
+        long block does not spam Telegram every scheduled run."""
+        last = self.db.last_alert(key)
+        if last is not None and time.time() - last.alerted_at < cooldown_hours * 3600:
+            log.info("health message suppressed (sent recently)")
+            return
+        self.tg.send_health(text)
+        self.db.record_alert(key, None, None, None, "health", "health", None)
+
     def _health_message_blocked(self) -> None:
-        self.tg.send_health(
+        if self.cfg.dry_run:
+            return
+        self._send_health_once(
             "🛑 <b>Deal Radar: Amazon is blocking automated access right now.</b>\n"
             "No alerts could be fetched this run. This usually clears on its own.\n"
             "The next scheduled run will try again. No prices were compared.")
@@ -230,7 +243,7 @@ class Pipeline:
     def _health_message_error(self, detail: str) -> None:
         if self.cfg.dry_run:
             return
-        self.tg.send_health(
+        self._send_health_once(
             f"⚠️ <b>Deal Radar run had errors.</b>\n{detail[:300]}\n"
             f"Pages fetched: {self.stats.categories_fetched + self.stats.product_pages_fetched}. "
             "See the Actions log for details.")
