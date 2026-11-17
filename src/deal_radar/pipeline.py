@@ -194,7 +194,11 @@ class Pipeline:
                     self.cfg.alert_cooldown_hours, self.cfg.realert_price_drop_pct):
                 self.stats.suppressed_duplicates += 1
                 continue
-            message_id = self.tg.send_deal(deal)
+          message_id = self.tg.send_deal(deal)
+            if message_id is None and not self.cfg.dry_run:
+                log.warning("Telegram delivery failed for %s - will retry next run",
+                            deal.asin)
+                continue
             self.db.record_alert(
                 deal.asin, deal.used_price, deal.new_price, deal.savings_pct,
                 deal.tier, deal.verification, message_id)
