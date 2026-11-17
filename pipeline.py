@@ -189,7 +189,9 @@ class Pipeline:
             if product.title:
                 self.db.upsert_offer(offer.asin, product.title, product.used_price,
                                      offer.used_offer_count, product.image_url)
-            deal = evaluate(offer, product, self.cfg)
+            historical = self.db.last_known_new_price(
+                offer.asin, self.cfg.historical_ref_max_days)
+            deal = evaluate(offer, product, self.cfg, historical)
             deals.append(deal)
         return deals
 

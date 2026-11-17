@@ -79,6 +79,10 @@ class Config:
     discovery_pages_per_category: int = int(os.getenv("DISCOVERY_PAGES_PER_CATEGORY", "2"))
     max_candidates_per_run: int = int(os.getenv("MAX_CANDIDATES_PER_RUN", "30"))
 
+    # How old a remembered NEW price may be and still be used as the
+    # comparison reference when today's page shows no NEW/list price.
+    historical_ref_max_days: float = float(os.getenv("HISTORICAL_REF_MAX_DAYS", "45"))
+
     # Storage / misc.
     db_path: str = os.getenv("RADAR_DB_PATH", "data/radar.db")
     dry_run: bool = os.getenv("DRY_RUN", "").strip().lower() in ("1", "true", "yes")

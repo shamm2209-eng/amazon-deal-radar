@@ -26,6 +26,7 @@ STATUS_EMOJI = {
     models.POTENTIAL_PRICE_ERROR: "⚠️ Potential price error",
     models.UNVERIFIED: "❓ Unverified price",
     models.INCOMPLETE_INFO: "🧩 Incomplete product information",
+    models.HISTORICAL: "🕐 Compared with last known NEW price",
 }
 
 
@@ -47,7 +48,9 @@ def build_caption(deal: Deal) -> str:
         "",
         f"<b>Used price:</b> {fmt_egp(deal.used_price)}",
         f"<b>New price:</b> {fmt_egp(deal.new_price)}"
-        + (f" ({deal.reference_type.replace('_', ' ')})" if deal.reference_type == "list_price" else ""),
+        + (f" ({deal.reference_type.replace('_', ' ')})" if deal.reference_type == "list_price" else "")
+        + (f" (last seen {time.strftime('%d %b', time.gmtime(deal.reference_ts + 2 * 3600))})"
+           if deal.reference_type == "last_known_new_price" and deal.reference_ts else ""),
     ]
     if deal.savings_pct is not None:
         lines.append(f"<b>Savings:</b> {deal.savings_pct:.0f}% below new price")
@@ -84,6 +87,12 @@ class Telegram:
         self.sent = 0
         self.failed = 0
 
+    def _sanitize(self, message: str) -> str:
+        """Never let the bot token appear in logs (logs can be shared)."""
+        if self.bot_token:
+            message = message.replace(self.bot_token, "***")
+        return message
+
     def _post(self, method: str, payload: dict) -> Optional[int]:
         if self.dry_run:
             log.info("DRY RUN - would send %s to Telegram", method)
@@ -104,7 +113,7 @@ class Telegram:
             result = data.get("result", {})
             return result.get("message_id")
         except requests.RequestException as exc:
-            log.error("Telegram %s error: %s", method, exc)
+            log.error("Telegram %s error: %s", method, self._sanitize(str(exc)))
             self.failed += 1
             return None
 
